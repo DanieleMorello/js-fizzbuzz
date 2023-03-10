@@ -21,7 +21,8 @@ far svolgere al nostro programma così come lo faremmo
 */
 
 // Dom element
-const divElement = document.querySelector(div);
+const divElement = document.querySelector('.container');
+console.log(divElement);
 
 // Scrivi un programma che stampi in console i numeri da 1 a 100(ciclo for)
 for(let i = 1; i < 101; i++) {
@@ -29,14 +30,22 @@ for(let i = 1; i < 101; i++) {
   // per i numeri che sono sia multipli di 3 che di 5 stampi 
   // “FizzBuzz”.
   if (i % 3 === 0) {
+    const squareEl = divElement.innerHTML += '<div class="square d-flex align-items-center justify-content-center m-3">`${i}`</div>';
     console.log('Fizz');
+    
     // i multipli di 3 stampi “Buzz”
   } else if (i % 5 === 0) {
     console.log('Buzz');
-    // per i multipli di 5 stampi “Buzz”
+    
+    // per i multipli di 5 stampi “FizzBuzz”
   } else if (i % 3 === 0 && i % 5 === 0) {
-    console.log(i,'FizzBuzz');
+    console.log('FizzBuzz');
+    
+    
    } else {
      console.log(i);
+     
    }
+
+   
 }
