@@ -20,6 +20,9 @@ far svolgere al nostro programma così come lo faremmo
 -3. Facciamo attenzione all'ordine delle condizioni che usiamo
 */
 
+// Dom element
+const divElement = document.querySelector(div);
+
 // Scrivi un programma che stampi in console i numeri da 1 a 100(ciclo for)
 for(let i = 1; i < 101; i++) {
   
